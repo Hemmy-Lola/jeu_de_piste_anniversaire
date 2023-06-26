@@ -21,7 +21,7 @@ async def on_ready():
 
 @client.event
 async def on_member_join(member):
-  general_channel = client.get_channel(1108364968052674673)
+  general_channel = client.get_channel("(code serveur)")
   # await general_channel.send("https://tenor.com/view/kidnap-kid-brother-grab-bootloon-gif-22467768")
   await general_channel.send("*Bienvenue à vous * "+ member.name + "! *écris* GO *pour commencer*")
 
@@ -63,4 +63,4 @@ async def on_message(message):
     await message.channel.send("*Vous voilà arrivée à destination, consultez à present le plan et rejoignez le cercle rouge et non le vert...")
 
 
-client.run("MTEwODM2MjU3NzY5NzgzNzEwNg.GzIOfJ.3r_NPISHJ8FnC6yKfILWzl7pfGa5WMw4SpieyM")
+client.run("(token)")
